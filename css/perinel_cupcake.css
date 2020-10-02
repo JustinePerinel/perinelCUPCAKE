@@ -1,0 +1,293 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* AJOUT DE BOX-SIZING */
+
+* {
+    box-sizing: border-box;
+}
+
+/* FIN DU RESET  */
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+body {
+    background: repeating-linear-gradient(90deg, #E2C9D7, #E2C9D7 20px, #E9D2DF 0, #E9D2DF 40px);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+#conteneur {
+    width: 900px;
+    margin: auto;
+}
+
+/* STYLE DE HEADER  */
+
+header {
+    height: 110px;
+    background: url(../img/logo.png) no-repeat;
+    background-position: left top;
+    background-size: contain;
+    background-color: #fff;
+}
+
+header h1 {
+    text-align: end;
+    color: #b934a2;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header address {
+    text-align: right;
+    padding: 0 10px;
+}
+
+/* FIN DE HEADER */
+
+/* STYLE DE DIV .A-PROPOS  */
+
+.a-propos {
+    background-color: #b934a2;
+    color: #fff;
+    padding: 20px 80px;
+    font-size: 1.3em;
+    line-height: 24px;
+}
+
+.ps {
+    font-size: 13px;
+    padding: 15px 0;
+}
+
+/* FIN DE DIV .A-PROPOS */
+
+/* STYLE DE CUPCAKE OF THE DAY (COD) */
+
+.cod {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cod img {
+    padding: 10px;
+}
+
+.cod .description {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.cod .texte-cod {
+    padding: 10px;
+}
+
+/* style du bouton  */
+button {
+    margin-top: 10px;
+    background: #b934a2;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px 0 10px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* FIN DE COD */
+
+/* STYLE DE LA GALERIE  */
+
+.galerie figure {
+    padding: 10px;
+}
+
+.galerie img {
+    max-width: 100%;
+}
+
+.galerie figcaption {
+    position: relative;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+/* FIN DE STYLE DE LA GALERIE */
+
+/* STYLE DU FOOTER  */
+
+
+/* STYLE DU TABLEAU DES HORAIRES  */
+
+.horaire {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    height: 225px;
+}
+
+.horaire table {
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+table td {
+    padding: 4px;
+}
+
+/* les rangées impaires sont en violet  */
+.horaire table tr:nth-of-type(odd) {
+    background-color: #c761b4;
+}
+
+/* les informations dans les cellules paires sont à droite */
+.horaire table td:nth-of-type(even) {
+    text-align: right;
+}
+
+/* FIN DDU TABLEAU DES HORAIRES */
+
+/* STYLE POUR LE LIEU  */
+
+footer img {
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+footer .lieu {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+footer address {
+    font-style: italic;
+    padding: 0 5px;
+}
+
+/* FIN DU STYLE POUR LE LIEU  */
+/* FIN DU FOOTER  */
+
+/* La classe pour créer une rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Les colonnes*/
+
+.col-1 {
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666666%;
+}
+
+.col-6 {
+    width: 48%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 4%;
+}
