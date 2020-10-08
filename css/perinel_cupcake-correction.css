@@ -1,0 +1,170 @@
+/* les styles pour la page cake my day */
+
+
+/* éviter les problemes de taille avec border et padding */
+* {
+    box-sizing: border-box;
+}
+
+/* le dégradé de couleur en fond pour body */
+body {
+    background: repeating-linear-gradient(90deg, #E2C9D7, #E2C9D7 20px, #E9D2DF 0, #E9D2DF 40px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 900px;
+    margin: auto;
+}
+
+/* pour les images qui seront aux maximum de la taille du parent */
+img {
+    max-width: 100%;
+}
+
+/* header en flex */
+
+header {
+    display: flex;
+    /* on les espace un à droite, un à gauche  */
+    justify-content: space-between;
+    background-color: #fff;
+    /* on les espace verticalement */
+    align-items: center;
+    padding: 5px 10px;
+}
+
+header div#logo {
+    width: 100px;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #b934a2;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* pour figure et figcaption et les images */
+
+figure {
+    display: flex;
+    flex-flow: column;
+    width: 270px;
+}
+
+figcaption {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    min-height: 100px;
+}
+
+/* section1  */
+
+.section-1 {
+    background-color: #b934a2;
+    color: #fff;
+    padding: 20px 100px;
+    font-size: 1.3em;
+    height: 160px;
+}
+
+.section-1 .ps {
+    font-size: 0.6em;
+    margin-top: 25px;
+}
+
+/* section2 */
+
+.section-2 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* le style du bouton */
+.section-2 input {
+    width: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: #b934a2;
+    color: #fff;
+    margin-top: 20px;
+    font: bold 13px Verdana;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 6px;   
+}
+
+
+
+/* LA GRILLE */
+
+/* création de la rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Mes colonnes */
+
+.col-1 {
+    width: 6.333333%;
+    margin: 1%;
+}
+.col-2 {
+    width: 14.6666%;
+    margin: 1%;
+}
+.col-3 {
+    width: 23%;
+    margin: 1%;
+}
+.col-4 {
+    width: 31.333333%;
+    margin: 1%;
+}
+.col-5 {
+    width: 39.6666666%;
+    margin: 1%;
+}
+.col-6 {
+    width: 48%;
+    margin: 1%;
+}
+.col-7 {
+    width: 56.333333%; 
+    margin: 1%;
+}
+.col-8 {
+    width: 64.666666%;
+    margin: 1%; 
+}
+.col-9 {
+    width: 73%;
+    margin: 1%;  
+}
+.col-10 {
+    width: 81.333333%;
+    margin: 1%;  
+}
+.col-11 {
+    width: 89.666666%;
+    margin: 1%;   
+}
+.col-12 {
+    width: 98%;
+    margin: 1%;   
+}
+
+/* les marges*/
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.666666%;
+}
+

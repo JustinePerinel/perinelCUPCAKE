@@ -68,14 +68,23 @@ body {
     margin: auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* STYLE DE HEADER  */
 
 header {
     height: 110px;
-    background: url(../img/logo.png) no-repeat;
-    background-position: left top;
-    background-size: contain;
+    max-width: 100%;
     background-color: #fff;
+    display: flex;
+    /* on les espace un à droite, un à gauche  */
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 100px;
 }
 
 header h1 {
@@ -98,7 +107,7 @@ header address {
 
 /* STYLE DE DIV .A-PROPOS  */
 
-.a-propos {
+.section-01 {
     background-color: #b934a2;
     color: #fff;
     padding: 20px 80px;
@@ -115,27 +124,27 @@ header address {
 
 /* STYLE DE CUPCAKE OF THE DAY (COD) */
 
-.cod {
+.section-02 {
     background: rgba(255, 255, 255, 0.5);
 }
 
 h2 {
     font-weight: bold;
     font-size: 1.6em;
-    padding: 20px;
+    padding: 30px 20px 0 20px;
     font-family: 'Oswald', sans-serif;
 }
 
-.cod img {
+.section-02 img {
     padding: 10px;
 }
 
-.cod .description {
+.section-02 .description {
     padding: 20px;
     margin-bottom: 10px;
 }
 
-.cod .texte-cod {
+.section-02 .texte-cod {
     padding: 10px;
 }
 
@@ -151,7 +160,7 @@ button {
 h3 {
     font-weight: bold;
     font-size: 1.3em;
-    padding: 5px 0 10px 0;
+    padding: 10px 0 10px 0;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -159,19 +168,20 @@ h3 {
 
 /* STYLE DE LA GALERIE  */
 
-.galerie figure {
+.section-03 figure {
     padding: 10px;
+    display: flex;
+    flex-flow: column;
 }
 
-.galerie img {
+.section-03 img {
     max-width: 100%;
 }
 
-.galerie figcaption {
-    position: relative;
-    bottom: 5px;
+.section-03 figcaption {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
+    min-height: 100px;
 }
 
 /* FIN DE STYLE DE LA GALERIE */
@@ -238,56 +248,196 @@ footer address {
 }
 
 /* Les colonnes*/
-
 .col-1 {
-    width: 8.333333%;
+    width: 6.333333%;
+    margin: 1%;
 }
-
 .col-2 {
-    width: 16.666666%;
+    width: 14.6666%;
+    margin: 1%;
 }
-
 .col-3 {
-    width: 25%;
+    width: 23%;
+    margin: 1%;
 }
-
 .col-4 {
-    width: 33.333333%;
+    width: 31.333333%;
+    margin: 1%;
 }
-
 .col-5 {
-    width: 41.666666%;
+    width: 39.6666666%;
+    margin: 1%;
 }
-
 .col-6 {
     width: 48%;
+    margin: 1%;
 }
-
 .col-7 {
-    width: 58.333333%;
+    width: 56.333333%; 
+    margin: 1%;
 }
-
 .col-8 {
-    width: 66.666666%;
+    width: 64.666666%;
+    margin: 1%; 
 }
-
 .col-9 {
-    width: 75%;
+    width: 73%;
+    margin: 1%;  
 }
-
 .col-10 {
-    width: 83.333333%;
+    width: 81.333333%;
+    margin: 1%;  
 }
-
 .col-11 {
-    width: 91.666666%;
+    width: 89.666666%;
+    margin: 1%;   
 }
-
 .col-12 {
-    width: 100%;
+    width: 98%;
+    margin: 1%;   
+}
+/* les marges */
+
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.666666%;
 }
 
-/* les marges à gauche pour créer si on le veut des colonnes vides */
-.marge-1 {
-    margin-left: 4%;
+/* le responsive */
+
+
+/* pour portable  */
+@media (min-width: 321px) and (max-width: 767px) {
+    #conteneur {
+        width: 500px;
+    }
+
+    header {
+        height: 245px;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+    }
+
+    header h1 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    header address {
+        text-align: center;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+
+    header .logo {
+        margin: auto;
+    }
+
+    .section-01 {
+        height: 190px;
+        padding: 10px 40px;
+        font-size: 1em;
+    }
+
+    .section-01 .ps {
+        font-size: 0.9em;
+    }
+    
+    #description {
+        margin-top: 100px;
+    }
+
+    /* les colonnes en xs */
+    .col-xs-4 {
+        width: 31.3333333%;
+        margin: 1%;
+    }
+
+    .col-xs-6 {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .col-xs-8 {
+        width: 64.666666%;
+        margin: 1%;  
+    }
+    
+    .col-xs-12 {
+        width: 98%;
+        padding: 1%;
+    }
+}
+
+/* pour tablette */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #conteneur {
+        width: 700px;
+    }
+
+    header {
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        height: 240px;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    header address {
+        text-align: center;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    header .logo {
+        margin: 0 auto;
+    }
+
+    .section-01 {
+        height: 190px;
+        padding: 10px 40px;
+        font-size: 1em;
+    }
+
+    .section-01 .ps {
+        font-size: 0.9em;
+    }
+
+    #description {
+        margin-top: 150px;
+    }
+
+    /* les colonnes en sm */
+    .col-sm-4 {
+        width: 31.3333333%;
+        margin: 1%;
+    }
+
+    .col-sm-6 {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .col-sm-8 {
+        width: 64.666666%;
+        margin: 1%;  
+    }
+    
+    .col-sm-12 {
+        width: 98%;
+        padding: 1%;
+    }
+
+    .marge-sm-3 {
+        margin-left: 25%;
+    }
+
 }

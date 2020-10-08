@@ -14,13 +14,17 @@
     <div id="conteneur"> <!-- début de #conteneur, entoure tout le code -->
         
         <header><!-- début de header -->
-            <div class="logo"></div>
-            <h1>Cake my day</h1>
-            <address>711 Boylston St. <br> Boston, MA 01720</address>
+            <div class="logo">
+                <img src="img/logo.png" alt="Cake my Day : logo">
+            </div>
+            <div>
+                <h1>Cake my day</h1>
+                <address>711 Boylston St. <br> Boston, MA 01720</address>
+            </div>
         </header><!-- fin de header -->
 
         
-        <div class="a-propos"><!-- debut de .a-propos -->
+        <div class="section-01"><!-- debut de .section-01 -->
             <p>
                 Every day we make 100 cupcakes of a special flavor not on the menu. Order it by name & it's free! <br>
                 You have to act fast though, when all 100 are gone the deal is done for the day. (Limit 1 per customer.) <br><br>
@@ -29,19 +33,21 @@
         </div><!-- fin de .a-propos  -->
 
 
-        <div class="cod"><!-- début de .cod (Cupcake Of the Day) -->
+        <div class="section-02"><!-- début de .section-02 (Cupcake Of the Day) -->
             <h2>Today's free cupcake</h2>
             <div class="row"> <!-- une rangée -->
                 
-                <img src="img/cupcake1.jpg" alt="perinelCUPCAKE : le cupcake du jour" class="col-3">
+                <img src="img/cupcake1.jpg" alt="perinelCUPCAKE : le cupcake du jour" class="col-3 col-sm-8 col-xs-8">
 
-               <div class="col-2 description">
-                    <p>October 9 <br> Triple
-                        Caramel</p>
-                    <button>36 left !</button>
+               <div class="col-2 col-sm-4 col-xs-4 description">
+                    <p id="description">October 9 <br> Triple Caramel</p>
+
+                    <form action="#" method="POST">
+                        <button>36 left !</button>
+                    </form>
                </div>
 
-                <div class="col-7 texte-cod">
+                <div class="col-7 col-sm-12 col-xs-12 texte-cod">
                     <h3>Why do you do this ?</h3>
                     <p>We freshly bake more than 50 varieties of cupcakes a day including standars such as Red Velvet, Carrot and Devil's Food as wekk crazy esoteric (but delicious) flavors such as Milshake, Hot Chocolate and Cannoli. We're pretty sure that once you get a taste of what we have to offer you'll be back for more. It's that Simple!</p>
                 </div>
@@ -52,16 +58,16 @@
 
         
         <h3>Sample of our not-so-free wares</h3>
-        <div class="galerie row"><!-- début de .galerie -->
-            <figure class="col-4">
+        <div class="section-03 row"><!-- début de .galerie -->
+            <figure class="col-4 col-sm-6 col-xs-12">
                 <img src="img/cupcake2.jpg" alt="">
                 <figcaption>Strawberry Chocolate<br> Chocolate cake filled and froster with chocolate fudge, topped with strawberry frosting and sprinkled with chocolate stars</figcaption>
             </figure>
-            <figure class="col-4">
+            <figure class="col-4 col-sm-6 col-xs-12">
                 <img src="img/cupcake3.jpg" alt="">
                 <figcaption>Carrot Cheesecake<br> Carrot cake with cheesecake baked in topped with vanilla cream cheese frosting and chocolate star.</figcaption>
             </figure>
-            <figure class="col-4">
+            <figure class="col-4 marge-sm-3 col-sm-6 col-xs-12">
                 <img src="img/cupcake4.jpg" alt="">
                 <figcaption>Peanut Butter<br> Vanilla caka filled with peanut butter frosting, topped with peanut butter and chocolate cream cheese frosting and peanut butter chips.</figcaption>
             </figure>
@@ -70,7 +76,7 @@
  
         <footer class="row"><!-- début du footer -->
             
-            <div class="horaire col-6"><!-- début du tableau .horaire  -->
+            <div class="horaire col-6 col-xs-12"><!-- début du tableau .horaire  -->
                 <h3>Our Hours</h3>
                 <table>
                     <tr>
@@ -105,7 +111,7 @@
             </div><!-- fin du tableau .horaire  -->
 
             
-            <div class="lieu marge-1 col-6"><!-- début de .lieu -->
+            <div class="lieu col-6 col-xs-12"><!-- début de .lieu -->
                 <h3>Where are we ?</h3>
                 <address>711 Boylston Street, Boston, MA 01720</address>
                 <img src="img/map_boston.png" alt="">
